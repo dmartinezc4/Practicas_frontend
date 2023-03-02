@@ -2,6 +2,8 @@ import { useState } from "react";
 import styled from "styled-components"
 import{ appendGrid} from "@/pages/index"
 
+
+
 const Formulario = ()=>{
     const [nombre,setNombre]=useState<string>("");//variable para el nombre
     const [dni,setDni]=useState<string>("");//variable para el dni
@@ -19,7 +21,6 @@ const Formulario = ()=>{
         </>
     )
 }
-
 
 
 
