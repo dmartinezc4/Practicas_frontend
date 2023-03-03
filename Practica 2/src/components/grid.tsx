@@ -32,15 +32,13 @@ const Grid = () => {
       }
 
     return(
-        <>
+        <> 
+            <DivTabla filas={numFilas} id = "grid">
+            </DivTabla><br/>
 
             Introduce un nombre: <input id="nombre" type="text" value={nombre} onChange = {(e) => setNombre(e.target.value)}/><br/>
             Introduce un DNI: <input id="dni" type="text" value={dni} onChange = {(e) => setDNI(e.target.value)}/><br/>
             <button onClick={(e)=>{if((nombre && dni) && isDNI(dni)) addRow()}} ><img src="/añadir.png" id="grid_val"  width="20" height="20"/></button><br/>
-
-            <DivTabla filas={numFilas} id = "grid">
-            </DivTabla><br/>
-            
         </>
     );
 }
